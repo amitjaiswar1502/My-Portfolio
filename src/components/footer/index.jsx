@@ -55,7 +55,7 @@ const Footer = () => {
                     <SocialIcon
                         color="#E84C88"
                         icon={<FaLinkedin />}
-                        link="https://youtube.com"
+                        link="https://www.linkedin.com/in/amit-jaiswar-a45678102/"
                     />
                     {/* <SocialIcon
                         color="#FF0000"
