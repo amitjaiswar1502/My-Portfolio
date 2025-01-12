@@ -7,7 +7,7 @@ import "./style.scss";
 
 const Intro = () => {
     return (
-        <div className="Intro-section bg-gradient-to-b from-[#3730A3] to-[#312E81]">
+        <div className="Intro-section  bg-gradient-to-b from-[#3730A3] to-[#9591f2]">
             <div
                 className="vector-bg"
                 id="parallex"
@@ -22,7 +22,7 @@ const Intro = () => {
                 src={cloudSoft}
                 alt="cloud-soft"
             />
-            <div className="content">
+            <div className="container mx-auto px-5">
                 <Navigation />
                 <IntroContent />
             </div>

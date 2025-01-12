@@ -11,7 +11,7 @@ const projectsData = [
         tags: ["web-app"],
         media: {
             thumbnail: require("../../images/portfolio/khaana.png"),
-            link : "https://64735dd0ae27a537226fe6f9--dainty-dango-750f29.netlify.app/",
+            link : "https://khaana.amitjaiswar.in/",
         },
         
     },

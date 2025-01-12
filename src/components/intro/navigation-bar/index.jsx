@@ -19,7 +19,7 @@ const Navigation = () => {
         <>
             <div className="top-navigation-bar">
                 <div className="app-logo">
-                   <h2 className="text-white">DEV</h2>
+                    <h2 className="text-white">DEV</h2>
                 </div>
                 <div
                     className="mobile-menu"
@@ -38,7 +38,11 @@ const Navigation = () => {
                     )}
                 </div>
 
-                <div className={`navigation  ${mobileMenu ? "active" : ""}`}>
+                <div
+                    className={`navigation  ${
+                        mobileMenu ? "active" : ""
+                    } space-x-4`}
+                >
                     <span
                         className="navigation-item"
                         onClick={() => menuItemClickHandler("skills")}
@@ -47,10 +51,17 @@ const Navigation = () => {
                     </span>
                     <span
                         className="navigation-item"
+                        onClick={() => menuItemClickHandler("timeline")}
+                    >
+                        My Journey
+                    </span>
+                    <span
+                        className="navigation-item"
                         onClick={() => menuItemClickHandler("portfolio")}
                     >
                         Portfolio
                     </span>
+
                     {/* <span className="navigation-item" onClick={() => scrollToSection("portfolio")}>Blog & Articles</span> */}
                     <CallToAction
                         text="Contact Me"

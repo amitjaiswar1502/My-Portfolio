@@ -38,6 +38,12 @@ const Footer = () => {
                         </li>
                         <li
                             className="footer-menu-item"
+                            onClick={() => scrollToSection("timeline")}
+                        >
+                            My Journey
+                        </li>
+                        <li
+                            className="footer-menu-item"
                             onClick={() => scrollToSection("portfolio")}
                         >
                             Portfolio
