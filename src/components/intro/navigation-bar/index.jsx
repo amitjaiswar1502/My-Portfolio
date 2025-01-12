@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../images/Amit.jpg";
+// import logo from "../../../images/Amit.jpg";
 import { CgMenuRight } from "react-icons/cg";
 import { IoMdClose } from "react-icons/io";
 
@@ -19,10 +19,7 @@ const Navigation = () => {
         <>
             <div className="top-navigation-bar">
                 <div className="app-logo">
-                    <img
-                        src={logo}
-                        alt="My-logo"
-                    />
+                   <h2 className="text-white">DEV</h2>
                 </div>
                 <div
                     className="mobile-menu"
@@ -41,7 +38,7 @@ const Navigation = () => {
                     )}
                 </div>
 
-                <div className={`navigation ${mobileMenu ? "active" : ""}`}>
+                <div className={`navigation  ${mobileMenu ? "active" : ""}`}>
                     <span
                         className="navigation-item"
                         onClick={() => menuItemClickHandler("skills")}

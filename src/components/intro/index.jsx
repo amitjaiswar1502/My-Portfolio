@@ -7,7 +7,7 @@ import "./style.scss";
 
 const Intro = () => {
     return (
-        <div className="Intro-section">
+        <div className="Intro-section bg-gradient-to-b from-[#3730A3] to-[#312E81]">
             <div
                 className="vector-bg"
                 id="parallex"

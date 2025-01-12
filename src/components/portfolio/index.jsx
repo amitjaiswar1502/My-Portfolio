@@ -21,7 +21,7 @@ const projectsData = [
         tags: ["web-app"],
         media: {
             thumbnail: require("../../images/portfolio/weather.png"),
-            link : "https://weather.amitjaiswar.com/"
+            link : "https://weather.amitjaiswar.in/"
         },
        
     },
@@ -51,7 +51,7 @@ const projectsData = [
         tags: ["mern-app","react-app"],
         media: {
             thumbnail: require("../../images/portfolio/myNoteBook.png"),
-            link : "https://notes.amitjaiswar.com/login"
+            link : "https://notes.amitjaiswar.in/login"
         },
         
     },
@@ -61,7 +61,7 @@ const projectsData = [
         tags: ["web-app"],
         media: {
             thumbnail: require("../../images/portfolio/drumKit.png"),
-            link : "https://drumkit.amitjaiswar.com/"
+            link : "https://drumkit.amitjaiswar.in/"
         },
      
     },
@@ -81,7 +81,7 @@ const projectsData = [
         tags: ["web-app"],
         media: {
             thumbnail: require("../../images/portfolio/tindog.png"),
-            link :"https://tindog.amitjaiswar.com/",
+            link :"https://tindog.amitjaiswar.in/",
         },
         
     },
