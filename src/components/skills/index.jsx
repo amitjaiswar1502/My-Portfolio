@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 // import { Toaster } from "./ui/toaster"
 import { DownloadButton } from "../DownloadButton";
 import { Toaster } from "../ui/toaster";
-import { LinkPreview } from "../ui/link-preview";
+// import { LinkPreview } from "../ui/link-preview"
 
 const technologies = [
     {
@@ -138,15 +138,13 @@ export default function SkillsSection() {
                             variants={itemVariants}
                             className={`${tech.color} p-6 rounded-2xl backdrop-blur-sm hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl flex flex-col items-center justify-center space-y-4 group`}
                         >
-                            <LinkPreview url={tech.link } >
-                                <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full p-4 transition-transform group-hover:scale-110 duration-300">
-                                    <img
-                                        src={tech.icon}
-                                        alt={`${tech.name} icon`}
-                                        className="w-12 h-12 object-contain"
-                                    />
-                                </div>
-                            </LinkPreview>
+                            <div className="w-20 h-20 flex items-center justify-center bg-white rounded-full p-4 transition-transform group-hover:scale-110 duration-300">
+                                <img
+                                    src={tech.icon}
+                                    alt={`${tech.name} icon`}
+                                    className="w-12 h-12 object-contain"
+                                />
+                            </div>
 
                             <h3 className="font-semibold text-lg group-hover:text-white transition-colors duration-300">
                                 {tech.name}
