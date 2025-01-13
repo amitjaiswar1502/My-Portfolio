@@ -2,12 +2,12 @@
 
 import { useState } from "react";
 import { Download, CheckCircle2, Loader2 } from "lucide-react";
-
 import  Button  from "./ui/button";
 import { useToast } from "./ui/use-toast";
 
 
 // import { useToast } from "../ui/use-toast";
+const RESUME_URL = "https://amitjaiswar.in/amitjaiswar.pdf";
 
 export function DownloadButton() {
     const [isDownloading, setIsDownloading] = useState(false);
@@ -18,29 +18,28 @@ export function DownloadButton() {
         setIsDownloading(true);
 
         try {
-            // Simulate download delay
-            await new Promise((resolve) => setTimeout(resolve, 2000));
+            // Open the resume URL in a new tab to trigger the download
+            window.open(RESUME_URL, '_blank');
+
+            // Simulate a short delay to show the download process
+            await new Promise((resolve) => setTimeout(resolve, 1000));
 
             // Trigger success state
             setIsComplete(true);
-            toast({
-                title: "Success!",
-                description: "CV downloaded successfully.",
-            });
-
-            // Reset after animation
+           
             setTimeout(() => {
                 setIsComplete(false);
             }, 2000);
         } catch (error) {
             toast({
                 title: "Error",
-                description: "Failed to download CV. Please try again.",
+                description: "Failed to initiate CV download. Please try again.",
                 variant: "destructive",
             });
         } finally {
             setIsDownloading(false);
         }
+    
     };
 
     return (
